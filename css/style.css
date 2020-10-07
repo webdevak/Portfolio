@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  background-image: url(../images/mountainfog.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  position: relative;
+  margin: auto;
+}
+
+header {
+  height: 50vh;
+  margin-top: 0px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+header a {
+  padding: 10px 3.5em;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+header a {
+  padding: 0;
+}
+
+.jumbotron .title {
+  font-style: italic;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+header .jumbotron {
+  margin-top: 10%;
+  padding-bottom: 0px;
+}
+
+.lead {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-style: oblique;
+  border-bottom: 5px solid;
+  padding-bottom: 6%;
+}
+
+.skills .jumbotron {
+  padding-top: 0px;
+}
+
+.skills {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.css {
+  transform: translateX(-100px);
+  animation: translate 0.5s ease-in;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.sass {
+  transform: translateX(100px);
+  animation: translate 0.5s ease-in;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.html,
+.js {
+  transform: translateY(-100px);
+  animation: translate 0.5s ease-in;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes translate {
+  to {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-450px);
+  }
+  to {
+    transform: translateX(55px);
+  }
+}
+
+.skills img {
+  width: 40%;
+  transition: transform 1s cubic-bezier(0.85, -0.62, 0.47, 1.2);
+}
+
+.skills li {
+  font-size: 15px;
+}
+
+.skills .list-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.skills-related {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-left: 8%;
+}
+
+nav ul li {
+  border: 1px solid white;
+  padding: 14px;
+  width: 20%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#projects {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  font-style: italic;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transform: skewX(-10deg);
+}
+
+.projects .jumbotron {
+  margin-bottom: 0px;
+}
+
+.col {
+  background-color: #343a40;
+  padding-bottom: 10%;
+}
+
+.col img {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  padding-bottom: 50px;
+  margin-bottom: 200px;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.grid-container {
+  display: flex;
+  margin: auto;
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.photo-container {
+  text-align: center;
+  margin-left: 10%;
+}
+
+.photo-container img {
+  position: relative;
+  z-index: 100;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.photo {
+  position: relative;
+  transition: transform 1s cubic-bezier(0.85, -0.62, 0.47, 1.2);
+  transform-style: preserve-3d;
+}
+
+.photo-desc {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.photo:hover {
+  transform: rotateX(-180deg);
+}
+
+.side-a,
+.side-b {
+  backface-visibility: hidden;
+}
+
+.side-b {
+  transform: rotateX(180deg);
+}
+
+.photo-container,
+.image-container,
+.image-container-1 {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.image-overlay {
+  display: flex;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 10px;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.image-overlay {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image p {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+.image h3 {
+  color: white;
+}
+
+.btn {
+  width: 50%;
+}
+
+.secondary {
+  border-bottom: 5px solid;
+}
+
+.contact {
+  margin: auto;
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+.contact p {
+  width: 50%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .jumbotron .title {
+    font-size: 6rem;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects {
+    font-size: 6rem;
+  }
+
+  .skills li {
+    font-size: 20px;
+  }
+
+  .skills img {
+    width: 20%;
+  }
+
+  .card {
+    width: 98%;
+    margin-left: 1%;
+    padding-bottom: 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%;
+    padding-bottom: 0;
+  }
+
+  .col {
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 1.4;
+    padding-bottom: 4%;
+  }
+}
