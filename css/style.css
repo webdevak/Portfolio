@@ -7,7 +7,6 @@ body {
   width: 100%;
   background-image: url(../images/mountainfog.jpg);
   background-repeat: no-repeat;
-  background-position: cover;
   position: relative;
   margin: auto;
 }
@@ -282,6 +281,11 @@ nav ul li {
 
 .image h3 {
   color: white;
+  font-size: 17px;
+}
+
+.image p {
+  font-size: 15px;
 }
 
 .btn {
