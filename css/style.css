@@ -47,7 +47,7 @@ header .jumbotron {
 }
 
 .lead {
-  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-style: oblique;
   border-bottom: 5px solid;
   padding-bottom: 6%;
