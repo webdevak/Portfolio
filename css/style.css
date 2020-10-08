@@ -11,12 +11,17 @@ body {
   margin: auto;
 }
 
+.fixed-top {
+  widows: 100%;
+}
+
 header {
   height: 50vh;
   margin-top: 0px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  margin: auto;
 }
 
 header a {
@@ -70,7 +75,7 @@ header .jumbotron {
 }
 
 .sass {
-  transform: translateX(100px);
+  transform: translateX(-11px);
   animation: translate 0.5s ease-in;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
@@ -303,7 +308,7 @@ nav ul li {
 }
 
 .contact p {
-  width: 50%;
+  width: 67%;
   margin: auto;
 }
 
@@ -344,6 +349,10 @@ a.github {
   .html,
 .js {
   transform: translateY(-100px);
+}
+
+.sass {
+  transform: translateX(100px);
 }
 
   .skills li {
