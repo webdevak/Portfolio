@@ -307,6 +307,26 @@ nav ul li {
   margin: auto;
 }
 
+a.github{
+ background-image: url(../images/github.svg);
+}
+ 
+a.github:hover {
+  opacity: 1;
+}
+
+a.github {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+}
+
+
 @media (min-width: 768px) {
   .jumbotron .title {
     font-size: 6rem;
