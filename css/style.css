@@ -45,6 +45,36 @@ header a {
   font-weight: 400;
   padding-bottom: 0px;
 }
+/* 
+.title:hover{
+  transform: translateX(600px);
+  transition: tranfrom 2s ;
+} */
+
+
+.fade_out {
+  opacity: 0;
+}
+
+#fade_transition {
+  transition-property: opacity;
+  transition-duration: 6s;
+}
+
+.slide_before {
+  left: 2050px;
+}
+
+.slide_after {
+  left: 0px;
+}
+
+
+#slide_transition {
+  position: relative;
+  transition-property: left;
+  transition-duration: 3s;
+}
 
 header .jumbotron {
   margin-top: 10%;
@@ -298,6 +328,10 @@ a.github {
     background-size: 30px 30px;
     opacity: .4;
     transition: all .5s;
+}
+
+footer{
+  font-weight: 700;
 }
 
 
