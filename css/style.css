@@ -37,6 +37,7 @@ header a {
 
 .jumbotron .title {
   font-style: italic;
+  color: #ffffff;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
@@ -50,12 +51,14 @@ header .jumbotron {
 .lead {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-style: oblique;
-  border-bottom: 5px solid;
+  color: #ffffff;
+  border-bottom: 5px solid black;
   padding-bottom: 6%;
 }
 
 .skills .jumbotron {
   padding-top: 0px;
+  color: #ffffff;
 }
 
 .skills {
@@ -146,6 +149,7 @@ nav ul li {
   cursor: pointer;
 }
 
+
 #projects {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.65);
@@ -154,6 +158,26 @@ nav ul li {
   font-size: 3rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform: skewX(-10deg);
+  animation: slide 1s cubic-bezier(1,-0.41,0,.67);
+  
+}
+
+ #projects:hover {
+  transform: translateX(-500px);
+animation: translate 1s cubic-bezier(1,-0.41,0,.67);
+animation-play-state: paused;
+animation-delay: calc(var(--scroll) * -1s);
+animation-iteration-count: 1;
+animation-fill-mode: both;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-550px);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
 
 .projects .jumbotron {
@@ -334,6 +358,11 @@ a.github {
 
 
 @media (min-width: 768px) {
+
+  body {
+    background-size: 100% 13%;
+  }
+
   .jumbotron .title {
     font-size: 6rem;
   }
@@ -377,6 +406,10 @@ a.github {
 }
 
 @media (min-width: 1024px) {
+
+  body {
+    background-size: 100% 20%;
+  }
 
   .skills-related {
     padding-top: 100px;
