@@ -45,12 +45,6 @@ header a {
   font-weight: 400;
   padding-bottom: 0px;
 }
-/* 
-.title:hover{
-  transform: translateX(600px);
-  transition: tranfrom 2s ;
-} */
-
 
 .fade_out {
   opacity: 0;
