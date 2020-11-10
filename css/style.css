@@ -30,6 +30,8 @@ header a {
   padding: 10px 3.5em;
   text-decoration: none;
   font-weight: 800;
+  font-size: 30px;
+  text-align: center;
 }
 
 header a {
@@ -64,10 +66,12 @@ header a {
 }
 
 .flip_transition {
- transition: transform 1s;
+  position: relative;
+  transition-property: transform;
+  transition-duration: 3s;
 }
 
-.flip {
+.flip_after {
   transform: rotateX(360deg) ;
 }
 
@@ -99,7 +103,8 @@ header .jumbotron {
 .skills .jumbotron {
   padding-top: 0px;
   color:#000000;
-  margin-right: 50%;
+  text-align: left;
+  width: 50%;
 }
 
 .skills {
@@ -110,8 +115,17 @@ header .jumbotron {
   font-family: fantasy;
 }
 
-.css {
+.skills .jumbotron {
   transform: translateX(-100px);
+  animation: translate 0.5s ease-in;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -2s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.css {
+  transform: translateX(-90px);
   animation: translate 0.5s ease-in;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
