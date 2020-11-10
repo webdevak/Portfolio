@@ -13,26 +13,29 @@
     crossorigin="anonymous"
   />
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" integrity="sha512-5/OHwmQzDSBS0Ous4/hlYoWLHd06/d2r7LdKZQVBXOA6PvOqWVXtdboiLTU7lQTGyVoKVTNkwi0ol4gHGlw5ww==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
-<body id="home" data-spy="scroll" data-target=".navbar-nav" class="shadow-lg p-3 mb-5 bg-dark rounded">
+<body id="home" data-spy="scroll" data-target=".navbar-nav" class="shadow-lg rounded">
 
 
 
     <header class="container">
         <!-- navBar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
-            <a class="navbar-brand order-1" href="#">WebDevAk</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <a class="navbar-brand order-1 text-danger" href="#">WebDevAk</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link" data-scroll href="#home">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link " data-scroll href="#skills">Skills</a>
-                <a class="nav-link" data-scroll href="#projects">Projects</a>
-                <a class="nav-link" data-scroll href="#Contact">Contact</a>
+                <a class="nav-link text-warning" data-scroll href="#home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-warning " data-scroll href="#skills">Skills</a>
+                <a class="nav-link text-warning" data-scroll href="#projects">Projects</a>
+                <a class="nav-link text-warning" data-scroll href="#Contact">Contact</a>
               </div>
             </div>
           </nav>
@@ -41,14 +44,14 @@
 
     <!-- Jumbotron -->
     <div class=" container-fluid jumbotron bg-transparent">
-        <h1 class="title p-0 display-1">Capstone Portfolio</h1>
-        <p class="lead display-4">Brought to you By Hamed Akanni</p>
+        <h1 class="title p-0 display-1">CapStone Portfolio</h1>
+        <p class="lead display-4">By Hamed Akanni</p>
     </div>
  <!-- /Jumbotron -->
 
  
 <!-- Skills-->
-<div class="container">
+<div class="middle">
 <div class="skills" id="skills">
     <h1 class="jumbotron display-2 bg-transparent">Skills</h1>
     <img class="css" src="images/css.png" alt="Css3">
@@ -58,9 +61,9 @@
     <img class="jquery" src="images/jquery.png" alt="jquery">
     <img src="images/nodejs.png" alt="Node.js">
     <img src="images/npm-logo.png" alt="Npm">
-    <img id="react" src="images/React Cover.jpg" alt="React">
+    <img id="react" src="images/React.jpg" alt="React">
 
-<div class="skills-related">
+<!-- <div class="skills-related">
     <h3 class="text-white">Related Skills</h3>
     <div class="d-flex ">
     <ul class="list-group ml-4">
@@ -80,12 +83,13 @@
         <li class="list-group-item bg-dark text-white">Bootstrap</li>
       </ul>
     </div>
+</div> -->
 </div>
 </div>
 
 
 <!-- /Skills -->
-
+<div class="container">
 <div class="container projects" > <!--projects container-->
 
     <!-- Projects-->
@@ -151,10 +155,10 @@
 
 <div class=" col secondary ">
     <div class="card border-0 bg-transparent">
-        <div class="photo-container">
-        <div class="photo">
-            <img  class="side-a" src="images/randomGen.PNG" alt="registration Form">
-            <div class="photo-desc side-b">
+        <div class="image-container">
+        <div class="image">
+            <img  class="card-img" src="images/randomGen.PNG" alt="registration Form">
+            <div class="image-overlay">
                 <h3>Quote Generator</h3>
                 <p>A Random Quote Generator</p>
                 <div class=" d-flex .flex-row">
@@ -169,10 +173,10 @@
 
 
 <div class="card border-0 bg-transparent">
-    <div class="photo-container">
-        <div class="photo">
-            <img  class="side-a" src="images/sass-web-style-guide.PNG" alt="Style Guide">
-            <div class="photo-desc side-b">
+    <div class="image-container">
+        <div class="image">
+            <img  class="card-img" src="images/sass-web-style-guide.PNG" alt="Style Guide">
+            <div class="image-overlay">
                 <h3>Web Style Guide</h3>
                 <p>A style guide created with Sass</p>
                 <div class=" d-flex .flex-row">
@@ -187,10 +191,10 @@
 
 
 <div class="card border-0 bg-transparent ">
-    <div class="photo-container">
-        <div class="photo">
-            <img  class="side-a" src="images/wheelofsuccess.PNG" alt="Wheel Of Success">
-            <div class="photo-desc side-b">
+    <div class="image-container">
+        <div class="image">
+            <img  class="card-img" src="images/wheelofsuccess.PNG" alt="Wheel Of Success">
+            <div class="image-overlay">
                 <h3>Wheel of Succes</h3>
                 <p>Game show App</p>
                 <div class=" d-flex .flex-row">
@@ -232,7 +236,6 @@
             speedAsDuration: true
         });
         </script>
-
 <script src="js/app.js"></script>
 </body>
 </html>
