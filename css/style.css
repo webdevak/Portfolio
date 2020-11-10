@@ -5,11 +5,16 @@
 body {
   font-family: "Merriweather", serif;
   width: 100%;
-  background-image: url('https://media.giphy.com/media/xUA7b3mdJsdGrzF6dW/giphy.gif');
+  background-image: url('https://media.giphy.com/media/l4KihuqeuJEi9qLSM/giphy.gif');
   background-size: 100% 19%;
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
+  background-color: white;
+}
+
+.bg-dark {
+  background-color: white;
 }
 
 .fixed-top {
@@ -37,10 +42,12 @@ header a {
 
 .jumbotron .title {
   font-style: italic;
-  color: #ffffff;
+  color: #ec0653;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
+  font-weight: 400;
+  padding-bottom: 0px;
 }
 
 header .jumbotron {
@@ -51,14 +58,19 @@ header .jumbotron {
 .lead {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-style: oblique;
-  color: #ffffff;
-  border-bottom: 5px solid black;
+  color: #000000;
+  border-bottom: 5px solid #343a40;
   padding-bottom: 6%;
+}
+
+.middle {
+  background-color: #ffffff;
+  width: 100%;
 }
 
 .skills .jumbotron {
   padding-top: 0px;
-  color: #ffffff;
+  color:#000000;
 }
 
 .skills {
@@ -152,33 +164,19 @@ nav ul li {
 
 #projects {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
   text-align: center;
   font-style: italic;
   font-size: 3rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   transform: skewX(-10deg);
-  animation: slide 1s cubic-bezier(1,-0.41,0,.67);
-  
+  background-color:  #ec0653;
 }
+/* 
+#projects:hover {
+  transform: scale(1.3);
+  transition: transform .8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+} */
 
- #projects:hover {
-  transform: translateX(-500px);
-animation: translate 1s cubic-bezier(1,-0.41,0,.67);
-animation-play-state: paused;
-animation-delay: calc(var(--scroll) * -1s);
-animation-iteration-count: 1;
-animation-fill-mode: both;
-}
-
-@keyframes slide {
-  to {
-    transform: translateX(-550px);
-  }
-  to {
-    transform: translateX(100%);
-  }
-}
 
 .projects .jumbotron {
   margin-bottom: 0px;
@@ -211,56 +209,6 @@ animation-fill-mode: both;
   margin-top: 50px;
 }
 
-.photo-container {
-  text-align: center;
-  margin-left: 10%;
-}
-
-.photo-container img {
-  position: relative;
-  z-index: 100;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.photo {
-  position: relative;
-  transition: transform 1s cubic-bezier(0.85, -0.62, 0.47, 1.2);
-  transform-style: preserve-3d;
-}
-
-.photo-desc {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: whitesmoke;
-}
-
-.photo:hover {
-  transform: rotateX(-180deg);
-}
-
-.side-a,
-.side-b {
-  backface-visibility: hidden;
-}
-
-.side-b {
-  transform: rotateX(180deg);
-}
-
-.photo-container,
 .image-container,
 .image-container-1 {
   margin-top: 20px;
@@ -328,7 +276,7 @@ animation-fill-mode: both;
 
 .contact {
   margin: auto;
-  background-color: whitesmoke;
+  background-color: rgb(29, 33, 231);
   text-align: center;
 }
 
@@ -408,7 +356,7 @@ a.github {
 @media (min-width: 1024px) {
 
   body {
-    background-size: 100% 20%;
+    background-size: 100% 22%;
   }
 
   .skills-related {
