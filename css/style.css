@@ -5,7 +5,8 @@
 body {
   font-family: "Merriweather", serif;
   width: 100%;
-  background-image: url(../images/mountainfog.jpg);
+  background-image: url('https://media.giphy.com/media/xUA7b3mdJsdGrzF6dW/giphy.gif');
+  background-size: 100% 19%;
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
