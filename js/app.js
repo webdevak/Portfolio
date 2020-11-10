@@ -3,25 +3,23 @@
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
+const title = document.querySelector('.title');
+const lead = document.querySelector('.lead');
 
 
+const fade = () => {
+  setTimeout(() => {
+    lead.classList.toggle('fade_out');
+}, 1000);
 
-let tl = new TimelineMax({onUpdate:updatePercentage});
-const controller = new ScrollMagic.Controller();
+setTimeout(() => {
+      title.classList.remove('slide_before');
+      title.classList.add('slide_after');
+}, 1000);
 
-// tl.from("#projects", .5, {x:200, opacity:0});
-
-const scene = new ScrollMagic.scene({
-  triggerElement: ".projects",
-  triggerHook: "onLeave",
-  duration:"100%"
-})
-
-.setPin(".projects")
-.setTween(tl)
-.addTo(controller);
-
-function updatePercentage() {
-  tl.progress();
-  console.log(tl.progress());
 }
+
+lead.addEventListener('load', fade());
+
+
+
