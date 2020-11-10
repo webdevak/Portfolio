@@ -69,6 +69,14 @@ header a {
   left: 0px;
 }
 
+.flip_transition {
+ transition: transform 1s;
+}
+
+.flip {
+  transform: rotateX(360deg) ;
+}
+
 
 #slide_transition {
   position: relative;
