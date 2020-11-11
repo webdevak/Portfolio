@@ -58,11 +58,11 @@ header a {
 }
 
 .slide_before {
-  left: 2050px;
+  bottom: 2050px;
 }
 
 .slide_after {
-  left: 0px;
+  bottom: 0px;
 }
 
 .flip_transition {
@@ -78,7 +78,7 @@ header a {
 
 #slide_transition {
   position: relative;
-  transition-property: left;
+  transition-property: bottom;
   transition-duration: 3s;
 }
 
