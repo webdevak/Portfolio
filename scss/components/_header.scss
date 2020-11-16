@@ -1,0 +1,48 @@
+/* ----------------------------------------------
+                HEADER
+------------------------------------------------*/
+
+
+
+header {
+    height: 50vh;
+    margin-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    a {
+        padding: 10px 3.5em;
+        text-decoration: none;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+      }
+      .jumbotron {
+        margin-top: 10%;
+        padding-bottom: 0px;
+      }
+  }
+  
+
+  .jumbotron .title {
+    font-style: italic;
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-weight: 400;
+    padding-bottom: 0px;
+    @media (min-width: 768px) {
+        font-size: 6rem;
+      }
+  }
+
+  .lead {
+    font-family: "Brush Script MT", "Brush Script Std", cursive;
+    font-style: oblique;
+    color: #000000;
+    border-bottom: 5px solid #343a40;
+    padding-bottom: 6%;
+  }
+  
