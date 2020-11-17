@@ -8,12 +8,13 @@
 body {
   font-family: "Merriweather", serif;
   width: 100%;
-  background-image: url("https://media.giphy.com/media/l4KihuqeuJEi9qLSM/giphy.gif");
+  background-image: url("../images/forest.jpg");
   background-size: 100% 21%;
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
   background-color: white;
+  animation: change 10s infinite;
 }
 
 @media (min-width: 768px) {
@@ -30,6 +31,18 @@ body {
 
 .fixed-top {
   widows: 100%;
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../images/forest.jpg");
+  }
+  33% {
+    background-image: url("../images/colors.jpg");
+  }
+  67% {
+    background-image: url("../images/stars.jpg");
+  }
 }
 
 .middle {
@@ -423,7 +436,7 @@ header .jumbotron {
 
 .jumbotron .title {
   font-style: italic;
-  color: #000000;
+  color: white;
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
@@ -440,8 +453,7 @@ header .jumbotron {
 .lead {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-style: oblique;
-  color: #000000;
-  border-bottom: 5px solid #343a40;
+  color: white;
   padding-bottom: 6%;
 }
 
