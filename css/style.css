@@ -66,6 +66,12 @@ body {
   margin-top: 50px;
 }
 
+@media (min-width: 1200px) {
+  div ~ .projects {
+    max-width: 1340px;
+  }
+}
+
 footer {
   font-weight: 700;
 }
