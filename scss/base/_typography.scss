@@ -9,13 +9,13 @@
   body {
     font-family: "Merriweather", serif;
     width: 100%;
-    background-image: url('https://media.giphy.com/media/l4KihuqeuJEi9qLSM/giphy.gif');
+    background-image: url('../../images/midblack.jpg');
     background-size: 100% 21%;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
     position: relative;
     margin: auto;
     background-color: white;
-    // animation: change 10s infinite ;
+    background-size: 80%;
     @media (min-width: 768px) {
         background-size: 100% 13%;
       }
@@ -28,19 +28,6 @@
   .fixed-top {
     widows: 100%;
   }
-
-  // @keyframes change {
-  //   0% {
-  //     background-image: url('../images/forest.jpg');
-  //   }
-  //   33% {
-  //     background-image: url('../images/colors.jpg');
-  //   }
-  //   67% {
-  //     background-image: url('../images/stars.jpg');
-  //   }
-  // }
-
 
 
   // -------------Main Content background ------
