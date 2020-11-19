@@ -28,17 +28,13 @@ header {
   .jumbotron .title {
     font-style: italic;
     font-family:  "Brush Script Std";
-    color: gold;
+    color: white;
     font-size: 4rem;
     font-weight: 300;
     line-height: 1.2;
     font-weight: 400;
     padding-bottom: 0px;
-    background: linear-gradient(90deg, #000, rgb(175, 150, 150), #000);
-    animation: animate 7s linear ;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-clip: text;
+    @include text-effect;
     @media (min-width: 768px) {
         font-size: 6rem;
       }
@@ -47,13 +43,9 @@ header {
   .lead {
     font-family: "Brush Script MT", "Brush Script Std", cursive;
     font-style: oblique;
-    color: gold;
-    background: linear-gradient(90deg, #000, rgb(175, 150, 150), #000);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 7s linear;
-    background-clip: text;
-    padding-bottom: 6%;
+    color: white;
+    @include text-effect;
+    padding-bottom: 4%;
   }
 
 
@@ -61,17 +53,17 @@ header {
 
   @keyframes animate {
     0% {
-      background-position:-500% ;
+      background-position:-50% ;
     
     }
     33% {
       background-position:-500% ;
-      color: rgba(255, 255, 255, 0.1);
+    
     }
 
-    67% {
+    80% {
       background-position: 500%;
-      color: rgba(255, 255, 255, 0.1);
+      -webkit-text-fill-color: transparent;
     }
     100% {
       background-position: -500%;
