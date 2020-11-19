@@ -4,15 +4,29 @@
 
 #projects {
     width: 100%;
-    margin-top: 20%;
+    margin-top: 6%;
     text-align: center;
     font-style: italic;
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     background-color: #212529;
+    animation: rotate 10s ease-in-out;
     @media (min-width: 768px) {
       font-size: 6rem;
       }
+  }
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotateX(0deg) ;
+    
+    }
+    100% {
+      transform: rotateX(360deg) ;
+    
+    }
+
   }
   
   
