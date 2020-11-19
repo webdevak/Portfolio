@@ -1,0 +1,28 @@
+//--------------------------------------
+//          About
+//--------------------------------------
+
+
+#about {
+    font-style: italic;
+    font-weight: 500;
+    background-color: #0d0e0e;
+}
+
+.about{
+    @media (min-width: 1024px) {
+        background-image: url('../../images/quotes.png');
+        background-repeat: no-repeat;
+        background-size: 39px;
+        background-position: 256px;
+      }
+}
+
+.right {
+    @media (min-width: 1024px) {
+        background-image: url('../../images/qoute\ 2.png');
+        background-repeat: no-repeat;
+        background-size: 39px;
+        background-position: 1045px;
+    }
+}
