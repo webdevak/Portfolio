@@ -17,6 +17,21 @@ header {
         font-weight: 800;
         font-size: 30px;
         text-align: center;
+        &.home:hover{
+            @include border-bottom;
+        }
+        &.Skills:hover{
+            @include border-bottom;
+        }
+        &.About:hover{
+            @include border-bottom;
+        }
+        &.Projects:hover{
+            @include border-bottom;
+        }  
+        &.Contact:hover{
+            @include border-bottom;
+        }
       }
       .jumbotron {
         margin-top: 10%;
