@@ -10,7 +10,14 @@ const project = document.getElementById('projects');
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
 
+const sr = ScrollReveal();
 
+sr.reveal('div', {
+  origin: 'top',
+  distance: '50px',
+  scale: 1,
+  duration: 2000
+});
 
 
 // Fade Arrow function
