@@ -471,7 +471,7 @@ header .jumbotron {
     background-position: -500%;
   }
   80% {
-    background-position: 300%;
+    background-position: 200%;
     -webkit-text-fill-color: transparent;
   }
   100% {
