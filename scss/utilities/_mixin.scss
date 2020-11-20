@@ -19,3 +19,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: both;
 }
+
+@mixin border-bottom {
+    border-bottom: rgb(255, 0, 85) 3px solid;
+}
