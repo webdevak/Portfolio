@@ -27,13 +27,13 @@
     }
 }
 
-.about-section {
-    animation: fadeInUp 3s ease-in-out;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -3.9s);
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
+// .about-section {
+//     animation: fadeInUp 3s ease-in-out;
+//     animation-play-state: paused;
+//     animation-delay: calc(var(--scroll) * -3.9s);
+//     animation-iteration-count: 1;
+//     animation-fill-mode: both;
+// }
 
 
 @keyframes fadeInUp {
