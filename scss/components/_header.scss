@@ -53,6 +53,9 @@ header {
     @media (min-width: 768px) {
         font-size: 6rem;
       }
+      .title-name {
+        padding: 0px;
+      }
   }
 
   .lead {
@@ -62,7 +65,6 @@ header {
     @include text-effect;
     padding-bottom: 4%;
   }
-
 
   
 
