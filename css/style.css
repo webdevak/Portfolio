@@ -470,6 +470,10 @@ header .jumbotron {
   }
 }
 
+.jumbotron .title .title-name {
+  padding: 0px;
+}
+
 .lead {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-style: oblique;
@@ -539,7 +543,7 @@ header .jumbotron {
                 SKILLS
 ------------------------------------------------*/
 .skills .jumbotron {
-  padding-top: 8px;
+  padding-top: 30px;
   color: #000000;
   text-align: left;
   width: 50%;
@@ -659,14 +663,6 @@ header .jumbotron {
     background-size: 39px;
     background-position: 1045px;
   }
-}
-
-.about-section {
-  animation: fadeInUp 3s ease-in-out;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -4s);
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
 }
 
 @keyframes fadeInUp {
