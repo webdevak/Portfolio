@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -17,23 +18,28 @@
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar-nav" class="shadow-lg rounded ">
 
+    <video id="videoBG" autoplay muted loop>
+        <source src="videos/video-6.mp4">
+    </video>
   
     <header class="container">
+      
         <!-- navBar -->
         <header class="container">
+           
             <!-- navBar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-                <a class="navbar-brand order-1 text-danger" href="#">WebDevAk</a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand  text-white " href="#">WebDevAk</a>
                 <button class="navbar-toggler" type="button" data-toggle="navbar-collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav ">
-                    <a class=" home nav-link text-danger " data-scroll href="#home">Home <span class="sr-only">(current)</span></a>
-                    <a class=" Skills nav-link text-danger " data-scroll href="#skills">Skills</a>
-                    <a class=" About nav-link text-danger" data-scroll href="#about">About</a>
-                    <a class=" Projects nav-link text-danger" data-scroll href="#projects">Projects</a>
-                    <a class=" Contact nav-link text-danger" data-scroll href="#Contact">Contact</a>
+                    <a class=" home nav-link text-white pr-4" data-scroll href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class=" Skills nav-link text-white pr-4" data-scroll href="#skills">Skills</a>
+                    <a class=" About nav-link text-white pr-4" data-scroll href="#about">About</a>
+                    <a class=" Projects nav-link text-white pr-4" data-scroll href="#projects">Projects</a>
+                    <a class=" Contact nav-link text-white pr-4" data-scroll href="#Contact">Contact</a>
                   </div>
                 </div>
               </nav>
@@ -42,10 +48,12 @@
            <!-- /navBar -->
     </header>
 
+
+
     <!-- Jumbotron -->
-    <div class=" title-name container-fluid jumbotron bg-transparent">
-        <h1 class="title p-0 display-1 slide_before " id="slide_transition">CapStone Portfolio</h1>
-        <p class="lead display-4 fade_out" id="fade_transition">By Hamed Akanni</p>
+    <div class=" title-name container-fluid jumbotron p-0 bg-transparent">
+        <h1 class="title p-0 display-1 slide_before " id="slide_transition">Hamed Akanni's</h1>
+        <p class="lead display-4 fade_out" id="fade_transition">Portfolio</p>
     </div>
  <!-- /Jumbotron -->
 
@@ -65,20 +73,21 @@
 </div>
 </div>
 
-
+<div class="about">
 <h2 id="about" class="jumbotron display-3 text-center text-white mb-4">About</h2>
 <div class="about-section">
-<p class=" about text-danger text-center">I'm a Software Engineer, who is passionate about learning and mastering the latest technology!</p>
+<p class="  text-danger text-center">I'm a Software Engineer, who is passionate about learning and mastering the latest technology!</p>
 <p class="text-danger text-center">I have a Bachelor's Degree in Business.</p>
 <p class="text-danger text-center">I want to continue to improve on my skills, everyday of my life!</p>
 <p class="text-danger text-center">In the above skills section it doesn't display all of my abilities in my repitoire, that is all in my resume.</p>
 <p class="text-danger text-center">Lastly, I have great character, I'm passionate, I have an eagerness to learn and I'm very determined!</p>
 <p class="text-danger text-center right">My nature is constructed for Success!</p>
 </div>
+</div>
 
 <!-- /Skills -->
 <!-- <div class="container"> -->
-<div class="container projects" > <!--projects container-->
+<div class="container projects" id="project-container" > <!--projects container-->
 
     <!-- Projects-->
 
@@ -195,27 +204,30 @@
 </div>
 
 </div>
+
+<footer class="footer-container"  >
+<section class="contact">
+    <h2 id="Contact">Contact</h2>
+    <p class="footer-subscription-text">Email: Mr.Akanni832@gmail.com</p>
+        <div class="">
+            <p className="hear">
+                I'd love to hear from you!
+            </p>
+        
+        <a  href="https://github.com/webdevak" target="_blank" class=" social github mb5" title="Link to Github">gith</a>
+         
+        </div> 
+</section>
+
+<hr class="color-white">
+        <span class=" text-danger">&COPY;Capstone Portfolio 2020.</span>
+    </footer>
+
 </div>
 <!-- </div> -->
 <!--/ Projects -->
 
-<hr>
 
-<section class="contact jumbotron">
-    <h2 id="Contact" >Contact</h2>
-        <div >
-        <p class="contact-p"> I'd love to hear from you!</p>
-        <p>Email: Mr.Akanni832@gmail.com</p>
-        
-        <a href="https://github.com/webdevak" target="_blank" class=" social github" title="Link to Github">gith</a>
-         
-        
-        </div> 
-</section>
-
-    <footer class="text-center text-danger">
-        <span>&COPY;Capstone Portfolio 2020.</span>
-    </footer>
 
     
 <script src="js/app.js"></script>
