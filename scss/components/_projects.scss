@@ -4,13 +4,12 @@
 
 #projects {
     width: 100%;
-    margin-top: 6%;
     text-align: center;
     font-style: italic;
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     background-color: #212529;
-    animation: rotate 10s ease-in-out;
+    // animation: rotate 10s ease-in-out;
     @media (min-width: 768px) {
       font-size: 6rem;
       }
@@ -54,3 +53,9 @@
       }
   }
   
+
+  div ~ .projects {
+    @media (min-width: 1200px) {
+      max-width: 1355px;
+    }
+    }
