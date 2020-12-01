@@ -2,18 +2,22 @@
               Contact
 ------------------------------------------------*/
 
+#Contact {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: italic;
+  color: #fff;
+}
 
  .contact {
     margin: auto;
-    margin-top: 15%;
-    background-color: rgb(29, 33, 231);
+    margin-top: 5%;
     text-align: center;
-    // @include fadeInUp;
   }
   
   .contact p {
-    width: 67%;
-    margin: auto;
+    font-size: 20px;
+    color: #fff;
   }
   
   a.github{
@@ -33,4 +37,8 @@
       background-size: 30px 30px;
       opacity: .4;
       transition: all .5s;
+  }
+
+  .social {
+    margin-bottom: 10%;
   }

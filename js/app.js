@@ -31,9 +31,9 @@ setTimeout(() => {
       title.classList.add('slide_after');
 }, .1);
 
-setTimeout(() => {
-  project.classList.add('flip_after') // Flips the project title 10sec after the page loads
-}, 10000)
+// setTimeout(() => {
+//   project.classList.add('flip_after') // Flips the project title 10sec after the page loads
+// }, 10000)
 
 }
 

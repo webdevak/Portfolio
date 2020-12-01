@@ -8,7 +8,6 @@
 body {
   font-family: "Merriweather", serif;
   width: 100%;
-  background-image: url("../../images/midblack.jpg");
   background-size: 100% 21%;
   position: relative;
   margin: auto;
@@ -37,6 +36,11 @@ body {
   width: 100%;
 }
 
+.projects,
+.about {
+  background-color: black;
+}
+
 .flex-container {
   display: flex;
   padding-bottom: 50px;
@@ -53,14 +57,9 @@ body {
   margin-top: 50px;
 }
 
-@media (min-width: 1200px) {
-  div ~ .projects {
-    max-width: 1340px;
-  }
-}
-
-footer {
-  font-weight: 700;
+#project-container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -406,19 +405,21 @@ template {
                 HEADER
 ------------------------------------------------*/
 header {
-  height: 50vh;
+  height: 33vh;
   margin-top: 0px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
   margin: auto;
+  z-index: 1;
 }
 
 header a {
-  padding: 10px 3.5em;
+  padding: 10px 2.5em;
   text-decoration: none;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.2rem;
+  height: 100%;
   text-align: center;
 }
 
@@ -447,17 +448,27 @@ header .jumbotron {
   padding-bottom: 0px;
 }
 
+header .navbar-brand {
+  font-size: 2.5rem;
+  margin-right: 30%;
+}
+
+header .navbar-nav {
+  padding-right: 1rem;
+}
+
 .jumbotron .title {
   font-style: italic;
   font-family: "Brush Script Std";
-  color: white;
+  color: #312626;
   font-size: 4rem;
-  font-weight: 300;
+  font-weight: 800;
   line-height: 1.2;
-  font-weight: 400;
-  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(90deg, #000, #ffffff, #000);
-  animation: animate 5s linear;
+  animation: animate 3s linear;
   background-size: 70%;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -477,14 +488,17 @@ header .jumbotron {
 .lead {
   font-family: "Brush Script MT", "Brush Script Std", cursive;
   font-style: oblique;
-  color: white;
+  color: #312626;
   background: linear-gradient(90deg, #000, #ffffff, #000);
-  animation: animate 5s linear;
+  animation: animate 3s linear;
   background-size: 70%;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   overflow: hidden;
-  padding-bottom: 4%;
+  padding-bottom: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes animate {
@@ -503,6 +517,21 @@ header .jumbotron {
   }
 }
 
+#videoBG {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  #videoBG {
+    width: 100%;
+  }
+}
+
 /* ----------------------------------------------
                 Transitions
 ------------------------------------------------*/
@@ -513,30 +542,6 @@ header .jumbotron {
 #fade_transition {
   transition-property: opacity;
   transition-duration: 6s;
-}
-
-.slide_before {
-  bottom: 2050px;
-}
-
-.slide_after {
-  bottom: 0px;
-}
-
-.flip_transition {
-  position: relative;
-  transition-property: transform;
-  transition-duration: 3s;
-}
-
-.flip_after {
-  transform: rotateX(360deg);
-}
-
-#slide_transition {
-  position: relative;
-  transition-property: bottom;
-  transition-duration: 2s;
 }
 
 /* ----------------------------------------------
@@ -665,6 +670,10 @@ header .jumbotron {
   }
 }
 
+.about-section {
+  padding-bottom: 7%;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -683,13 +692,11 @@ header .jumbotron {
 ------------------------------------------------*/
 #projects {
   width: 100%;
-  margin-top: 6%;
   text-align: center;
   font-style: italic;
   font-size: 3rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: #212529;
-  animation: rotate 10s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -738,6 +745,12 @@ header .jumbotron {
   }
 }
 
+@media (min-width: 1200px) {
+  div ~ .projects {
+    max-width: 1355px;
+  }
+}
+
 /* ----------------------------------------------
                Buttons
 ------------------------------------------------*/
@@ -747,6 +760,23 @@ header .jumbotron {
 
 .secondary {
   border-bottom: 5px solid;
+}
+
+#footer {
+  background-color: #242424;
+  z-index: 1;
+}
+
+.footer-container {
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  text-align: right;
 }
 
 /* ----------------------------------------------
@@ -829,16 +859,22 @@ header .jumbotron {
 /* ----------------------------------------------
               Contact
 ------------------------------------------------*/
+#Contact {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-style: italic;
+  color: #fff;
+}
+
 .contact {
   margin: auto;
-  margin-top: 15%;
-  background-color: #1d21e7;
+  margin-top: 5%;
   text-align: center;
 }
 
 .contact p {
-  width: 67%;
-  margin: auto;
+  font-size: 20px;
+  color: #fff;
 }
 
 a.github {
@@ -858,4 +894,8 @@ a.github {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
+}
+
+.social {
+  margin-bottom: 10%;
 }
