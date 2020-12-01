@@ -5,7 +5,7 @@
 
 @mixin text-effect {
     background: linear-gradient(90deg, #000, #ffffff, #000);
-    animation: animate 5s linear  ;
+    animation: animate 3s linear  ;
     background-size: 70%;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
