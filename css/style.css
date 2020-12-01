@@ -424,23 +424,23 @@ header a {
 }
 
 header a.home:hover {
-  border-bottom: #ff0055 3px solid;
+  border-bottom: #fff 3px solid;
 }
 
 header a.Skills:hover {
-  border-bottom: #ff0055 3px solid;
+  border-bottom: #fff 3px solid;
 }
 
 header a.About:hover {
-  border-bottom: #ff0055 3px solid;
+  border-bottom: #fff 3px solid;
 }
 
 header a.Projects:hover {
-  border-bottom: #ff0055 3px solid;
+  border-bottom: #fff 3px solid;
 }
 
 header a.Contact:hover {
-  border-bottom: #ff0055 3px solid;
+  border-bottom: #fff 3px solid;
 }
 
 header .jumbotron {
