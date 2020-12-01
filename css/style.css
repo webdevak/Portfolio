@@ -467,12 +467,6 @@ header .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #000, #ffffff, #000);
-  animation: animate 3s linear;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -557,7 +551,14 @@ header .navbar-nav {
 
 @media (min-width: 768px) {
   .skills .jumbotron {
-    font-size: 250px;
+    font-size: 4rem;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills .jumbotron {
+    font-size: 12rem;
     padding-top: 0px;
   }
 }
