@@ -60,7 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include text-effect;
+    // @include text-effect;
     @media (min-width: 768px) {
         font-size: 6rem;
       }
