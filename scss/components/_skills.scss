@@ -8,7 +8,7 @@
     color:#000000;
     text-align: left;
     width: 50%;
-    margin-top: 10px;
+    margin-top: 29%;
     @media (min-width: 768px) {
       font-size: 4rem;
       padding-top:0px ;
@@ -16,6 +16,9 @@
     @media (min-width: 768px) {
       font-size: 12rem;
       padding-top:0px ;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 10px;
     }
   }
    img {

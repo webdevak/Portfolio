@@ -55,6 +55,13 @@
   
 
   div ~ .projects {
+    @media (min-width: 540px) {
+      max-width: 1000px;
+    }
+
+    @media (min-width: 960px) {
+      max-width: 1200px;
+    }
     @media (min-width: 1200px) {
       max-width: 1355px;
     }
