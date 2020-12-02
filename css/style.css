@@ -595,6 +595,13 @@ header .navbar-nav {
   font-family: fantasy;
 }
 
+@media (min-width: 768px) {
+  .skills {
+    font-size: 4rem;
+    padding-top: 0px;
+  }
+}
+
 .skills .jumbotron {
   transform: translateX(-100px);
   animation: translate 0.5s ease-in;
