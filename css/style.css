@@ -450,7 +450,7 @@ header .jumbotron {
 
 header .navbar-brand {
   font-size: 2rem;
-  margin-right: 20%;
+  margin-right: 15%;
 }
 
 @media (min-width: 1024px) {
@@ -490,12 +490,6 @@ header .navbar-nav {
   font-style: oblique;
   color: #fff;
   font-size: 3.5rem;
-  background: linear-gradient(90deg, #000, #ffffff, #000);
-  animation: animate 3s linear;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  overflow: hidden;
   padding-bottom: 17%;
   display: flex;
   justify-content: center;
@@ -597,12 +591,14 @@ header .navbar-nav {
   margin: auto;
   font-style: italic;
   font-family: fantasy;
+  margin-top: 30%;
 }
 
 @media (min-width: 768px) {
   .skills {
     font-size: 4rem;
     padding-top: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -678,11 +674,11 @@ header .navbar-nav {
 }
 
 @media (min-width: 1024px) {
-  .about {
+  .left {
     background-image: url("../../images/quotes.png");
     background-repeat: no-repeat;
     background-size: 39px;
-    background-position: 256px;
+    background-position: 210px;
   }
 }
 

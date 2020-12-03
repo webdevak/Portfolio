@@ -42,7 +42,7 @@ header {
       }
       .navbar-brand{
         font-size: 2rem;
-        margin-right: 20%;
+        margin-right: 15%;
         @media (min-width: 1024px) {
           margin-right: 30%;
         }
@@ -77,7 +77,7 @@ header {
     font-style: oblique;
     color: #fff;
     font-size: 3.5rem;
-    @include text-effect;
+    // @include text-effect;
     padding-bottom: 17%;
     display: flex;
     justify-content: center;
