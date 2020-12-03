@@ -450,7 +450,7 @@ header .jumbotron {
 
 header .navbar-brand {
   font-size: 2rem;
-  margin-right: 15%;
+  margin-right: 10%;
 }
 
 @media (min-width: 1024px) {
