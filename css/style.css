@@ -448,21 +448,6 @@ header .jumbotron {
   padding-bottom: 0px;
 }
 
-header .navbar-brand {
-  font-size: 2rem;
-  margin-right: 10%;
-}
-
-@media (min-width: 1024px) {
-  header .navbar-brand {
-    margin-right: 30%;
-  }
-}
-
-header .navbar-nav {
-  padding-right: 1rem;
-}
-
 .jumbotron .title {
   font-style: italic;
   font-family: "Brush Script Std";
