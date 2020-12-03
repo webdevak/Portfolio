@@ -589,7 +589,6 @@ header .navbar-nav {
   text-align: center;
   width: 100%;
   margin: auto;
-  font-style: italic;
   font-family: fantasy;
   margin-top: 30%;
 }
@@ -598,7 +597,7 @@ header .navbar-nav {
   .skills {
     font-size: 4rem;
     padding-top: 0px;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 
