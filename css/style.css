@@ -555,7 +555,7 @@ header .jumbotron {
 
 @media (min-width: 1024px) {
   .skills .jumbotron {
-    margin-top: 10px;
+    margin-top: 10%;
   }
 }
 
