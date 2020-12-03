@@ -673,21 +673,21 @@ header .navbar-nav {
   background-color: #0d0e0e;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1224px) {
   .left {
     background-image: url("../../images/quotes.png");
     background-repeat: no-repeat;
     background-size: 39px;
-    background-position: 210px;
+    background-position: 245px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1224px) {
   .right {
     background-image: url("../../images/qoute 2.png");
     background-repeat: no-repeat;
     background-size: 39px;
-    background-position: 1045px;
+    background-position: 1060px;
   }
 }
 
