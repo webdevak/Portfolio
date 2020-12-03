@@ -546,13 +546,6 @@ header .jumbotron {
   }
 }
 
-@media (min-width: 768px) {
-  .skills .jumbotron {
-    font-size: 12rem;
-    padding-top: 0px;
-  }
-}
-
 @media (min-width: 1024px) {
   .skills .jumbotron {
     margin-top: 10%;
