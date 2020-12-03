@@ -542,7 +542,7 @@ header .jumbotron {
 @media (min-width: 768px) {
   .skills .jumbotron {
     font-size: 10rem;
-    padding-top: 10rem;
+    padding-top: 9rem;
   }
 }
 
