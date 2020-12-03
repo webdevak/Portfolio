@@ -532,11 +532,11 @@ header .jumbotron {
                 SKILLS
 ------------------------------------------------*/
 .skills .jumbotron {
-  padding-top: 35px;
+  padding-top: 6rem;
   color: #000000;
   text-align: left;
   width: 50%;
-  margin-top: 40%;
+  margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
