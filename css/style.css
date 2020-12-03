@@ -468,6 +468,7 @@ header .jumbotron {
 
 .jumbotron .title .title-name {
   padding: 0px;
+  margin-left: 8px;
 }
 
 .lead {
@@ -475,7 +476,7 @@ header .jumbotron {
   font-style: oblique;
   color: #fff;
   font-size: 3.5rem;
-  padding-bottom: 17%;
+  padding-bottom: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
