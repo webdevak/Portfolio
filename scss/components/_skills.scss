@@ -7,6 +7,7 @@
     // padding-top: 6rem;
     color:#000000;
     text-align: left;
+    font-family: 'Times New Roman', Times, serif;
     width: 50%;
     // margin-top: 5rem;
     @media (min-width: 768px) {
@@ -38,9 +39,9 @@
     text-align: center;
     width: 100%;
     margin: auto;
-    // font-style: italic;
+    font-style: italic;
     font-family: fantasy;
-    // margin-top: 50%;
+    margin-top: 50%;
     @media (min-width: 768px) {
       font-size: 4rem;
       padding-top:0px ;
@@ -52,7 +53,7 @@
     transform: translateX(-100px);
     animation: translate 0.5s ease-in;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -2s);
+    animation-delay: calc(var(--scroll) * -3s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
   }
