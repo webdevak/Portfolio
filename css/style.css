@@ -528,6 +528,7 @@ header .jumbotron {
 .skills .jumbotron {
   color: #000000;
   text-align: left;
+  font-family: 'Times New Roman', Times, serif;
   width: 50%;
 }
 
@@ -567,7 +568,9 @@ header .jumbotron {
   text-align: center;
   width: 100%;
   margin: auto;
+  font-style: italic;
   font-family: fantasy;
+  margin-top: 50%;
 }
 
 @media (min-width: 768px) {
@@ -582,7 +585,7 @@ header .jumbotron {
   transform: translateX(-100px);
   animation: translate 0.5s ease-in;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -2s);
+  animation-delay: calc(var(--scroll) * -3s);
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
