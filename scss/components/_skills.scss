@@ -7,7 +7,7 @@
     // padding-top: 6rem;
     color:#000000;
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: serif;
     width: 50%;
     // margin-top: 5rem;
     @media (min-width: 768px) {
@@ -62,9 +62,12 @@
     transform: translateX(-90px);
     animation: translate 0.5s ease-in;
     animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
+    animation-delay: calc(var(--scroll) * -2s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    @media (min-width: 1024px) {
+      animation-delay: calc(var(--scroll) * -1s);
+    }
   }
   
   .sass {
