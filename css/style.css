@@ -417,7 +417,7 @@ header a {
 }
 
 header a.nav-link:hover {
-  background-color: #fff;
+  background-color: #1b1717;
   color: #242424;
   border-radius: 0;
 }
