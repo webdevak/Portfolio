@@ -8,7 +8,6 @@
 body {
   font-family: "Merriweather", serif;
   width: 100%;
-  background-image: url("../../images/img-8.jpg");
   background-repeat: no-repeat;
   position: relative;
   margin: auto;
@@ -412,29 +411,46 @@ header a {
   padding: 10px 2.5em;
   text-decoration: none;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   height: 100%;
   text-align: center;
 }
 
-header a.home:hover {
-  border-bottom: #fff 3px solid;
+header a.nav-link:hover {
+  background-color: #fff;
+  color: #242424;
+  border-radius: 0;
 }
 
-header a.Skills:hover {
-  border-bottom: #fff 3px solid;
+@media (min-width: 1024px) {
+  header a.nav-link:hover {
+    border-bottom: #fff 3px solid;
+    background-color: transparent;
+  }
 }
 
-header a.About:hover {
-  border-bottom: #fff 3px solid;
+@media (min-width: 1024px) {
+  header a.Skills:hover {
+    border-bottom: #fff 3px solid;
+  }
 }
 
-header a.Projects:hover {
-  border-bottom: #fff 3px solid;
+@media (min-width: 1024px) {
+  header a.About:hover {
+    border-bottom: #fff 3px solid;
+  }
 }
 
-header a.Contact:hover {
-  border-bottom: #fff 3px solid;
+@media (min-width: 1024px) {
+  header a.Projects:hover {
+    border-bottom: #fff 3px solid;
+  }
+}
+
+@media (min-width: 1024px) {
+  header a.Contact:hover {
+    border-bottom: #fff 3px solid;
+  }
 }
 
 header .jumbotron {
@@ -492,22 +508,11 @@ header .jumbotron {
 }
 
 #videoBG {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  min-width: 100%;
-  min-height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
-  object-position: center;
   object-fit: cover;
-}
-
-@media (min-aspect-ratio: 16 / 9) {
-  #videoBG {
-    width: 100%;
-  }
 }
 
 /* ----------------------------------------------
@@ -577,7 +582,6 @@ header .jumbotron {
   #skills {
     font-size: 4rem;
     padding-top: 0px;
-    margin-top: 100px;
   }
 }
 
