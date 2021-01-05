@@ -1747,6 +1747,23 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		border: 0;
+		overflow: hidden;
+	}
+	.item .image img {
+		-moz-transition: -moz-transform 0.2s ease-out;
+		-webkit-transition: -webkit-transform 0.2s ease-out;
+		-ms-transition: -ms-transform 0.2s ease-out;
+		transition: transform 0.2s ease-out;
+		width: 100%;
+		
+	}
+
+	.item .image:hover img {
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		background-size: 150%;
 	}
 
 		.image img {
