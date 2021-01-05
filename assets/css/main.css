@@ -1744,6 +1744,11 @@ input, select, textarea {
 
 /* Image */
 
+		.mug {
+		width: 50%;
+			
+		}
+
 		.fa-github {
 			margin-right: 20px;
 		}
