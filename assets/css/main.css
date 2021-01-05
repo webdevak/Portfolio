@@ -126,8 +126,9 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 3em;
 		letter-spacing: -1px;
+		font-weight:800;
 	}
 
 		h2.alt {
@@ -1749,7 +1750,7 @@ input, select, textarea {
 			
 		}
 
-		.fa-github {
+		.item .fa-github {
 			margin-right: 20px;
 		}
 
@@ -2021,7 +2022,7 @@ input, select, textarea {
 		}
 
 			.item header h3 {
-				font-size: 1em;
+				font-size: 1.5em;
 			}
 
 /* Icons */
@@ -2618,7 +2619,7 @@ input, select, textarea {
 			h2 {
 				font-size: 1.5em;
 				letter-spacing: 0;
-				font-weight: 300;
+				font-weight: 800;
 			}
 
 			.container {
