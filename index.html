@@ -1,263 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <title>Portfolio</title>
-</head>
-<body id="home" data-spy="scroll" data-target=".navbar-nav" class="shadow-lg rounded ">
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <video id="videoBG" autoplay muted loop>
-        <source src="videos/video-1.mp4">
-        
-    </video>
-   
-    <!-- <header class="container"> -->
-      
-        <!-- navBar -->
-        <header class="container">
-          
+		<!-- Header -->
+			<div id="header">
 
+				<div class="top">
 
-            <!-- navBar -->
-            <nav class="navbar navbar-expand-lg fixed-top p-2 navbar-dark" style="background-color: #000">
-                <section class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <a class="navbar-brand  text-white  order-1 " href="#">WebDevAk <span class="fab fa-battle-net"></span></a>
-                  <section class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class=" text-white home nav-link  pr-4" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" data-scroll href="#home" >Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class=" text-white Skills nav-link  pr-4" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" data-scroll href="#skills">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class=" text-white About nav-link  pr-4" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" data-scroll href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class=" text-white Projects nav-link  pr-4" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" data-scroll href="#projects">Projects</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class=" text-white Contact nav-link  pr-4" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" data-scroll href="#Contact">Contact</a>
-                      </li>
-                    </ul>
-                  </section>
-                </section>
-              </nav>
-              
-               <!-- /navBar -->
-            </header>
-           <!-- /navBar -->
-    <!-- </header> -->
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/project-1.jpeg" alt="" /></span>
+							<h1 id="title">Hamed Akanni</h1>
+							<p>Software Developer</p>
+						</div>
 
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+								<li><a href="#projects" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
 
+				</div>
 
-    <!-- Jumbotron -->
-    <div class=" title-name container-fluid jumbotron p-0 bg-transparent">
-        <h1 class="title p-0 display-1 slide_before " id="slide_transition">Hamed Akanni's</h1>
-        <p class="lead display-2 fade_out" id="fade_transition">Portfolio</p>
-    </div>
- <!-- /Jumbotron -->
+				<div class="bottom">
 
- 
-<!-- Skills-->
-<div class="middle">
-<div class=" skills" id="skills">
-    <h1 class="jumbotron display-2 bg-transparent">Skills</h1>
-    <img class="css" src="images/css.png" alt="Css3">
-    <img class="js" src="images/Js.png" alt="JS">
-    <img class="html" src="images/html.png" alt="HTML5">
-    <img class="sass" src="images/sass.png" alt="SASS">
-    <img class="jquery" src="images/jquery.png" alt="jquery">
-    <img src="images/nodejs.png" alt="Node.js">
-    <img src="images/npm-logo.png" alt="Npm">
-    <img id="react" src="images/React.jpg" alt="React">
-</div>
-</div>
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
 
-<div class="about">
-<h2 id="about" class="jumbotron display-3 text-center text-white mb-4">About</h2>
-<div class="about-section">
-<p class=" left text-danger text-center">I'm a Software Developer, who is passionate about learning and mastering the latest technology!</p>
-<p class="text-danger text-center">I have a Bachelor's Degree in Business.</p>
-<p class="text-danger text-center">I want to continue to improve on my skills</p>
-<p class="text-danger text-center">In the above skills section it doesn't display all of my abilities in my repitoire, that is all in my resume.</p>
-<p class="text-danger text-center">Lastly, I have great character, I'm passionate, I have an eagerness to learn and I'm very determined!</p>
-<p class="text-danger text-center right">My nature is constructed for Success!</p>
-</div>
-</div>
+				</div>
 
-<!-- /Skills -->
-<!-- <div class="container"> -->
-<div class="container projects" id="project-container" > <!--projects container-->
+			</div>
 
-    <!-- Projects-->
+		<!-- Main -->
+			<div id="main">
 
- <h2 class="portfolio jumbotron mb-0 text-white  flip_transition" id="projects" style="margin-bottom: 0px;">Projects</h2>
-    <div class="col">
-        <div class="card border-0 bg-transparent ">
-            <div class="image-container-1">
-                <div class="image">
-                    <img  src="images/dashboard.PNG" alt="dashboard">
-                    <div class="image-overlay">
-                        <h3>DashBoard</h3>
-                        <p>An Example of a realworld dashboard</p>
-                        <div class=" d-flex .flex-row ">
-                        <a href="https://github.com/webdevak/Web-App-Dashboard" target="_blank"
-                        class="btn btn-outline-warning">Code</a>
-                        <a href="https://webdevak.github.io/Web-App-Dashboard/" target="_blank" class="btn btn-outline-secondary ml-3">Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
 
- 
-<div class="card border-0 bg-transparent">
-        <div class="image-container">
-        <div class="image">
-            <img class="rounded mx-auto card-img-top"  src="images/directory.PNG" alt="directory">
-            <div class="image-overlay">
-                <h3>Employee Directory</h3>
-                <p>An Example of an Employee Directory using an Api</p>
-                <div class=" d-flex .flex-row">
-                <a href="https://github.com/webdevak/Employee-Directory" target="_blank"
-                 class="btn btn-outline-warning">Code</a>
-                 <a href="https://webdevak.github.io/Employee-Directory/" target="_blank" class="btn btn-outline-secondary ml-3">Demo</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Hamed Akanni</strong> A Software Developer<br />
+								This is my Portfolio Page Enjoy!</h2>
+							</header>
 
+							<footer>
+								<a href="#about" class="button scrolly">Get Started</a>
+							</footer>
 
-<div class="card border-0 bg-transparent">
-    <div class="image-container">
-        <div class="image">
-            <img  class="card-img" src="images/randomGen.PNG" alt="registration Form">
-            <div class="image-overlay">
-                <h3>Quote Generator</h3>
-                <p>A Random Quote Generator</p>
-                <div class=" d-flex .flex-row">
-                <a href="https://github.com/webdevak/RandomQuoteGenerator" target="_blank"
-                class="btn btn-outline-warning">Code</a>
-                <a href="https://webdevak.github.io/RandomQuoteGenerator/" target="_blank" class="btn btn-outline-secondary ml-3">Demo</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+						</div>
+					</section>
 
-</div>
+									<!-- About Me -->
+									<section id="about" class="three">
+										<div class="container">
+				
+											<header>
+												<h2>About Me</h2>
+											</header>
+				
+											<a class="image featured"></a>
+				
+											<p>I'm a Software Developer, who is passionate about learning and mastering the latest technology!
+												I have a Bachelor's Degree in Business. I enjoy coding, and
+												I want to continue to improve on my skills Everyday.
+												I have a variety of skills and abilities in my repitoire, this information can be found on my resume.
+												Lastly, I have great character, I'm passionate, I have an eagerness to learn and I'm very determined!
+												My nature is constructed for Success!.</p>
+				
+										</div>
+									</section>
 
+				<!-- Portfolio -->
+					<section id="projects" class="two">
+						<div class="container">
 
-<div class=" col secondary ">
-    <div class="card border-0 bg-transparent ">
-        <div class="image-container">
-            <div class="image">
-                <img  class="card-img" src="images/wheelofsuccess.PNG" alt="Wheel Of Success">
-                <div class="image-overlay">
-                    <h3>Wheel of Succes</h3>
-                    <p>Game show App</p>
-                    <div class=" d-flex .flex-row">
-                    <a href="https://github.com/webdevak/Wheel-of-Success" target="_blank"
-                     class="btn btn-outline-warning">Code</a>
-                     <a href="https://webdevak.github.io/Wheel-of-Success/" target="_blank" class="btn btn-outline-secondary ml-3">Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+							<header>
+								<h2>Projects</h2>
+							</header>
 
-    <div class="card border-0 bg-transparent">
-        <div class="image-container">
-            <div class="image">
-                <img class="card-img"   src="images/Data-Pagination.png" alt="Explore">
-                <div class=" image-overlay">
-                    <h3>Data Pagination</h3>
-                    <p>This Project uses pagination to enhance the usability of a web page</p>
-                    <div class=" d-flex .flex-row">
-                    <a href="https://github.com/webdevak/Data-Pagination" target="_blank"
-                    class="btn mr- 2 btn-outline-warning">Code</a>
-                    <a href="https://webdevak.github.io/Data-Pagination/" target="_blank" class="btn btn-outline-secondary ml-3">Demo</a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <form action="" method="get" type></form>
+				
 
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/dashboard.PNG" alt="" /></a>
+										<header>
+											<h3>Dashboard</h3>
+											<a href="https://github.com/webdevak/Web-App-Dashboard" target="_blank"
+						class="icon brands fa-github" alt="code"></a>
+						<a href="https://webdevak.github.io/Web-App-Dashboard/" 
+						target="_blank"  class="fas fa-tv"></a>
+										</header>
+									</article>
 
-<div class="card border-0 bg-transparent">
-    <div class="image-container">
-        <div class="image">
-            <img  class="card-img" src="images/sass-web-style-guide.PNG" alt="Style Guide">
-            <div class="image-overlay">
-                <h3>Web Style Guide</h3>
-                <p>A style guide created with Sass</p>
-                <div class=" d-flex .flex-row">
-                <a href="https://github.com/webdevak/Web-Style-Guide"  target="_blank"
-                class="btn btn-outline-warning">Code</a>
-                <a href="https://webdevak.github.io/Web-Style-Guide/" target="_blank" class="btn btn-outline-secondary ml-3">Demo</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/directory.PNG" alt="" /></a>
+										<header>
+											<h3>Empoloyee Directory</h3>
+											<a href="https://github.com/webdevak/Employee-Directory" target="_blank"
+											class="icon brands fa-github"></a>
+											<a href="https://webdevak.github.io/Employee-Directory/" target="_blank"  class="fas fa-tv"></a>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/Data-Pagination.png" alt="" /></a>
+										<header>
+											<h3>Data-Pagination</h3>
+											<a href="https://github.com/webdevak/Data-Pagination" target="_blank"
+											class="icon brands fa-github"></a>
+											<a href="https://webdevak.github.io/Data-Pagination/" target="_blank"  class="fas fa-tv"></a>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/wheelofsuccess.PNG" alt="" /></a>
+										<header>
+											<h3>Wheel of Success</h3>
+											<a href="https://github.com/webdevak/Wheel-of-Success" target="_blank"
+											class="icon brands fa-github"></a>
+											<a href="https://webdevak.github.io/Wheel-of-Success/" target="_blank"  class="fas fa-tv"></a>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/randomGen.PNG" alt="" /></a>
+										<header>
+											<h3>Random Qoute Generator</h3>
+											<a href="https://github.com/webdevak/RandomQuoteGenerator" target="_blank"
+											class="icon brands fa-github"></a>
+											<a href="https://webdevak.github.io/RandomQuoteGenerator/" target="_blank"  class="fas fa-tv"></a>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/sass-web-style-guide.PNG" alt="" /></a>
+										<header>
+											<h3>Web Style Guide</h3>
+											<a href="https://github.com/webdevak/Web-Style-Guide" target="_blank"
+											class="icon brands fa-github"></a>
+											<a href="https://webdevak.github.io/Web-Style-Guide/" target="_blank"  class="fas fa-tv"></a>
+										</header>
+									</article>
+								</div>
+							</div>
 
-</div>
-
-<footer class="footer-container"  >
-<section class="contact">
-    <h2 id="Contact">Contact</h2>
-    <p class="footer-subscription-text">Email: Mr.Akanni832@gmail.com</p>
-        <div class="">
-            <p className="hear">
-                I'd love to hear from you!
-            </p>
-        
-        <a  href="https://github.com/webdevak" target="_blank" class=" social github mb5" title="Link to Github">gith</a>
-         
-        </div> 
-</section>
-
-<hr class="color-white">
-        <span class=" text-danger">&COPY;Capstone Portfolio 2020.</span>
-    </footer>
-
-</div>
-<!-- </div> -->
-<!--/ Projects -->
+						</div>
+					</section>
 
 
 
-    
-<script src="js/app.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
 
+							<header>
+								<h2>Contact</h2>
+							</header>
 
+							<p>Send me an Email, I'd Love to Connect!</p>
 
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1700,
-            speedAsDuration: true
-        });
-        </script>
-</body>
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="mr.akanni832@gmail.com" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
