@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #000;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
@@ -2621,7 +2621,7 @@ input, select, textarea {
 			}
 
 			h2 {
-				font-size: 1.5em;
+				font-size: 2em;
 				letter-spacing: 0;
 				font-weight: 800;
 			}
@@ -2644,7 +2644,7 @@ input, select, textarea {
 			}
 
 			#main section.cover {
-				padding: 4em 0em;
+				padding: 13em 0em;
 			}
 
 				#main section.cover header {
