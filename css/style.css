@@ -33,3 +33,57 @@
 .image-overlay:hover {
   opacity: 0;
 }
+
+.name,
+.resume-skills,
+.desc {
+  margin-left: 5%;
+}
+
+.summary-title {
+  margin-left: 15%;
+}
+
+.summary {
+  width: 80%;
+  margin-left: 15%;
+}
+
+.inline-resume{
+  text-decoration: none;
+}
+
+.inline-resume:hover {
+  text-decoration: underline;
+}
+.resume-p {
+  text-align: left;
+width: 80%;
+margin-left: 15%;
+}
+
+.resume {
+  display: flex;
+flex-direction: column;
+}
+
+.dev {
+  text-align: right;
+  margin-right: 5%;
+}
+
+.developer {
+  text-align: center;
+}
+
+.resume-doc {
+  box-sizing: border-box;
+  width: 70%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.name {
+  margin-right: 68%;
+  font-size: 24px;
+}
