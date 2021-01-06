@@ -121,3 +121,13 @@
 				});
 
 })(jQuery);
+
+//Scroll Reveal 
+const sr = ScrollReveal();
+
+sr.reveal('article', {
+  origin: 'top',
+  distance: '50px',
+  scale: 1,
+  duration: 2000
+});
