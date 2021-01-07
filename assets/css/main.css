@@ -132,7 +132,9 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+			color: #fff;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-style: italic;
 		}
 
 			h2.alt strong {
